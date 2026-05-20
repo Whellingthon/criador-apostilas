@@ -43,7 +43,7 @@ with col2:
             st.error("Por favor, preencha todos os campos obrigatórios!")
         else:
             with st.spinner("O Back-end está compilando os livros, regras da BNCC e redigindo as seções..."):
-                url_api = "http://127.0.0.1:8001/gerar"
+                url_api = "https://criador-apostilas.onrender.com/gerar"
                 
                 payload = {
                     "email": email,
@@ -67,7 +67,7 @@ with col2:
                         st.success(f"Apostila estruturada com sucesso!")
                         
                         # Ativa o botão de download puxando o arquivo PDF do back-end
-                        url_download = f"http://127.0.0.1:8001/baixar-pdf/{email}"
+                        url_download = f"https://criador-apostilas.onrender.com/baixar-pdf/{email_professor}"
                         pdf_response = requests.get(url_download)
                         
                         if pdf_response.status_code == 200:
