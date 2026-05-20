@@ -5,6 +5,7 @@ st.set_page_config(page_title="Gerador de Apostilas", page_icon="📚", layout="
 
 st.title("📚 Gerador Inteligente de Apostilas Pro")
 st.caption("Gere planos de aula, conteúdos profundos e exercícios alinhados à BNCC.")
+st.caption("Desenvolvido por [Welington Hopka](https://mypage-chi-cyan.vercel.app).")
 
 col1, col2 = st.columns([1, 2])
 
