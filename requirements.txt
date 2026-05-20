@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+google-genai
+pypdf
+python-dotenv
+python-multipart
+streamlit
+requests
+streamlit-oauth
+reportlab
